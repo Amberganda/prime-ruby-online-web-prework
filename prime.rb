@@ -9,3 +9,4 @@ def prime?(integer)
     number += 1
   end
   return true
+end
