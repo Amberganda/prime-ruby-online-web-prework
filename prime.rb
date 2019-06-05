@@ -6,8 +6,8 @@ def prime?(integer)
   while number < integer
     if integer % number == 0
       return false
+    end
     number += 1
-  end
   end
   return true
 end
