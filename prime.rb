@@ -1,7 +1,11 @@
-def square_array(array)
-  new_array = []
-  array.each do |number|
-    new_array << (number**2)
+def prime?(integer)
+  return false if integer <= 1
+
+  number = 2
+
+  while number < integer
+    if integer % number == 0
+      return false
+    number += 1
   end
-  return new_array
-end
+  return true
